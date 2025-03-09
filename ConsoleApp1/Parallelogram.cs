@@ -4,9 +4,10 @@
 
     public Parallelogram(string name, double b, double h, double a) : base(name)
     {
+        A = a;
         B = b;
         H = h;
-        A = a;
+
     }
 
     public override double GetArea()

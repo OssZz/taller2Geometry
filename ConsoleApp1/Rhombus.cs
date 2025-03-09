@@ -1,11 +1,17 @@
 ﻿class Rhombus : GeometricFigure
 {
-    private double D1, D2; // Diagonales
+    private double D1, D2;
+    private int v;
 
     public Rhombus(string name, double d1, double d2) : base(name)
     {
         D1 = d1;
         D2 = d2;
+    }
+
+    public Rhombus(string name, double d1, double d2, int v) : this(name, d1, d2)
+    {
+        this.v = v;
     }
 
     public override double GetArea()
